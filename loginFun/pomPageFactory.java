@@ -10,6 +10,8 @@ public class pomPageFactory {
     public WebElement pass;
     @FindBy(xpath="//input[@value='Login']")
     public WebElement login;
+    @FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
+    public WebElement pop;
 
     public void enterEmail(String mail){
         email.sendKeys(mail);

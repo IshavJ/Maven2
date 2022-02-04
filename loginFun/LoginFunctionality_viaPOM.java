@@ -45,17 +45,16 @@ public class LoginFunctionality_viaPOM {
         pf.enterPass("1234");
         pf.Login();
         Thread.sleep(1000);
-//        try{
-//            s = d.findElement(By.xpath("//div[@class='alert alert-danger alert-dismissible']")).isDisplayed();
-//        }
-//        catch (Throwable t){
-//            System.out.println("error occured");
-//            if (s) {
-//                System.out.println("Case Failed..");
-//            } else {
-//                System.out.println("Case Passed 😄..");
-//            }
-//        }
+        try{
+            s = pf.pop.isDisplayed();
+        }
+        catch (Throwable t){
+            if (s) {
+                System.out.println("Case Failed..");
+            } else {
+                System.out.println("Case Passed 😄..");
+            }
+        }
     }
 
     @AfterSuite
